@@ -1,25 +1,49 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 
 function App() {
+  const [horas, setHoras] = useState();
+  const [dias, setDias] = useState();
+  const [consumo, setConsumo] = useState();
+  const [preco, setPreco] = useState();
   
+  const [resultado, setResultado] = useState();
+
+  const handleSubmit = (event) =>{
+    event.preventDefault();
+    setResultado(consumo/30*horas*dias*preco);
+  }
+
+  const handleChangeHoras = ({target}) => {
+    setHoras(target.value)
+  }
+  const handleChangeDias = ({target}) => {
+    setDias(target.value)
+  }
+  const handleChangeConsumo = ({target}) => {
+    setConsumo(target.value)
+  }
+  const handleChangePreco = ({target}) => {    
+    setPreco(target.value)
+  }
+
   return (
     <div className="App">
       <div>
           <form>
               <label> Horas/dia
-                <input/>
+                <input type="number" id="horas" onChange={handleChangeHoras} required/>
               </label>
               <label>Dias/mês
-                <input/>
+                <input type="number" id="dias" onChange={handleChangeDias} required/>
               </label>
               <label>Consumo do aparelho (kW/h por mês)
-                <input/>
+                <input type="number" id="consumo" onChange={handleChangeConsumo} required/>
               </label>
               <label>Preço da energia (R$ por kW/h)
-                <input/>
+                <input type="number" id="preco" onChange={handleChangePreco} required/>
               </label>
-              <button type="submit">Calcular</button>
+              <button onClick={handleSubmit} type="submit" >Calcular</button>
           </form>
           <label>
             Resultado
