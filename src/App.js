@@ -28,27 +28,36 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <div>
-          <form>
-              <label> Horas/dia
-                <input type="number" id="horas" onChange={handleChangeHoras} required/>
-              </label>
-              <label>Dias/mês
-                <input type="number" id="dias" onChange={handleChangeDias} required/>
-              </label>
-              <label>Consumo do aparelho (kW/h por mês)
-                <input type="number" id="consumo" onChange={handleChangeConsumo} required/>
-              </label>
-              <label>Preço da energia (R$ por kW/h)
-                <input type="number" id="preco" onChange={handleChangePreco} required/>
-              </label>
-              <button onClick={handleSubmit} type="submit" >Calcular</button>
-          </form>
-          <label>
-            Resultado
-            <p>{resultado}</p>
-          </label>
+    <div>
+      <div className="bx-principal">
+        <div>
+            <form className="frm-calc">
+                <label htmlFor="horas"> Horas/dia</label>
+                <input type="number" step="0.1" id="horas" onChange={handleChangeHoras} required/>
+                
+                <label htmlFor="dias">Dias/mês</label>
+                <input type="number" step="0.1" id="dias" onChange={handleChangeDias} required/>
+                
+                <label htmlFor="consumo">Consumo do aparelho (kW/h por mês)</label>
+                <input type="number" step="0.1" id="consumo" onChange={handleChangeConsumo} required/>
+                
+                <label htmlFor="preco">Preço da energia (R$ por kW/h)</label>
+                <input type="number" step="0.1" id="preco" onChange={handleChangePreco} required/>
+                
+                <button onClick={handleSubmit} type="submit" className="btn">Calcular</button>
+            </form>
+        </div>
+        <div className="bx-resultado">
+          { !resultado ? <p>Preencha os Campos</p>: 
+            <label>
+              O valor aproximado de consumo é
+              <p>{resultado}</p>
+            </label>
+            }
+        </div>
+      </div>
+      <div className="bx-explicacao">
+        Como esse cálculo é feito?
       </div>
     </div>
   );
