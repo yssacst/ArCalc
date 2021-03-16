@@ -1,18 +1,25 @@
 *{
-  background-color:#f6ffff;
   color:#008080;
   font-weight: bold;
+}
+.container{
+  background-image: url("/src/img/back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:auto;
+  height:auto;
 }
 .bx-principal{
   display:flex;
   justify-content:space-around;
   width:auto;
-  margin-top: 10%;
+  padding-top: 10%;
 }
 .frm-calc{
   display:flex;
   width:300px;
   flex-direction:column;
+  background-color: aliceblue;
 }
 input{
   border-style: none;

@@ -9,11 +9,12 @@ function App() {
   
   const [resultado, setResultado] = useState();
 
+  
   const handleSubmit = (event) =>{
     event.preventDefault();
     setResultado(consumo/30*horas*dias*preco);
   }
-
+  
   const handleChangeHoras = ({target}) => {
     setHoras(target.value)
   }
@@ -26,9 +27,19 @@ function App() {
   const handleChangePreco = ({target}) => {    
     setPreco(target.value)
   }
+  
+  const [moveX, setMoveX] = useState();
+  const [moveY, setMoveY] = useState();
+
+  const handleCursor = () => {
+    window.addEventListener("mousemove", (e) =>{
+      setMoveX(e.pageX * -1 / 40);
+      setMoveY(e.pageY * -1 / 40);
+    });
+  };
 
   return (
-    <div>
+    <div className="container" onMouseMove={ handleCursor } style={{ backgroundPosition:`${moveX}px ${moveY}px` }}>
       <div className="bx-principal">
         <div>
             <form className="frm-calc">
@@ -58,6 +69,35 @@ function App() {
       </div>
       <div className="bx-explicacao">
         Como esse cálculo é feito?
+        <p>w</p>
+        <p>w</p>
+        <p>w</p>
+        <p>w</p>
+        <p>w</p>
+        <p>w</p>
+        <p>w</p>
+        <p>w</p>
+        <p>w</p>
+        <p>w</p>
+        <p>w</p>
+        <p>w</p>
+        <p>w</p>
+        <p>w</p>
+        <p>w</p>
+        <p>w</p>
+        <p>w</p>
+        <p>w</p>
+        <p>w</p>
+        <p>w</p>
+        <p>w</p>
+        <p>w</p>
+        <p>w</p>
+        <p>w</p>
+        <p>w</p>
+        <p>w</p>
+        <p>w</p>
+        <p>w</p>
+
       </div>
     </div>
   );
