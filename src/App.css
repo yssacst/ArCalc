@@ -6,20 +6,27 @@
   background-image: url("/src/img/back.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  width:auto;
-  height:auto;
+  width:100vw;
+  height:100vh;
 }
 .bx-principal{
   display:flex;
   justify-content:space-around;
   width:auto;
-  padding-top: 10%;
+  padding-top: 30px;
 }
 .frm-calc{
   display:flex;
   width:300px;
   flex-direction:column;
-  background-color: aliceblue;
+  background-color: rgba(240, 248, 255,0.6);
+  padding:15px;
+  border-radius: 5px;
+}
+.lbl-titulo{
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  height: 400px;
 }
 input{
   border-style: none;
@@ -39,6 +46,38 @@ input{
   box-shadow: 1px 1px 3px #008080;
   cursor:pointer;
 }
+.bx-resultado{
+  width:300px;
+  text-align:center;
+  background-color: rgba(240, 248, 255,0.6);
+  padding:15px;
+  border-radius: 5px;
+}
 .bx-explicacao{
   text-align: center;
+}
+.txt-explicacao{
+  font-weight: normal;
+  font-size: 12px;
+}
+.bx-aux{
+  display: flex;
+}
+.bx-ajuda{
+  padding: 15px;
+  background-color: rgba(240, 248, 255,0.6);
+
+}
+@media only screen  and (max-width:730px)
+{
+  .bx-principal{
+    display: block;
+    min-width: 280px;
+    justify-content: center;
+  }
+  .bx-aux{
+    display: flex;  
+    justify-content:space-around;
+  }
+
 }
