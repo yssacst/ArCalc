@@ -21,3 +21,5 @@ Calculadora de consumo médio de uso de um ar condicionado.
 
 *Na caixa seguinte confira a média de consumo que você terá utilizando o ar condicionado na quantidade de horas e dias informados.*
 
+
+OBS: Aplicação desenvolvida com fins de estudo. Informando apenas uma média possível de custo de acordo com os dados inseridos.
