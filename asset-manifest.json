@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.ee4e7ccd.chunk.css",
-    "main.js": "/static/js/main.b80d76f1.chunk.js",
-    "main.js.map": "/static/js/main.b80d76f1.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.4441895d.js",
-    "runtime-main.js.map": "/static/js/runtime-main.4441895d.js.map",
-    "static/js/2.aa83e9db.chunk.js": "/static/js/2.aa83e9db.chunk.js",
-    "static/js/2.aa83e9db.chunk.js.map": "/static/js/2.aa83e9db.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.ee4e7ccd.chunk.css.map": "/static/css/main.ee4e7ccd.chunk.css.map",
-    "static/js/2.aa83e9db.chunk.js.LICENSE.txt": "/static/js/2.aa83e9db.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/static/media/back.49b20f49.jpg"
+    "main.css": "/ArCalc/static/css/main.37faa1e9.chunk.css",
+    "main.js": "/ArCalc/static/js/main.b80d76f1.chunk.js",
+    "main.js.map": "/ArCalc/static/js/main.b80d76f1.chunk.js.map",
+    "runtime-main.js": "/ArCalc/static/js/runtime-main.c6ad9384.js",
+    "runtime-main.js.map": "/ArCalc/static/js/runtime-main.c6ad9384.js.map",
+    "static/js/2.aa83e9db.chunk.js": "/ArCalc/static/js/2.aa83e9db.chunk.js",
+    "static/js/2.aa83e9db.chunk.js.map": "/ArCalc/static/js/2.aa83e9db.chunk.js.map",
+    "index.html": "/ArCalc/index.html",
+    "static/css/main.37faa1e9.chunk.css.map": "/ArCalc/static/css/main.37faa1e9.chunk.css.map",
+    "static/js/2.aa83e9db.chunk.js.LICENSE.txt": "/ArCalc/static/js/2.aa83e9db.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/ArCalc/static/media/back.49b20f49.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.4441895d.js",
+    "static/js/runtime-main.c6ad9384.js",
     "static/js/2.aa83e9db.chunk.js",
-    "static/css/main.ee4e7ccd.chunk.css",
+    "static/css/main.37faa1e9.chunk.css",
     "static/js/main.b80d76f1.chunk.js"
   ]
 }
